@@ -17,6 +17,6 @@ notes/
 .idea/
 log/
 migrations/
-static/media/
+static/media/uploads/
 site_media/images/
 
