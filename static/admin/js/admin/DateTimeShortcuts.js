@@ -82,10 +82,44 @@ var DateTimeShortcuts = {
         var time_list = quickElement('ul', clock_box, '');
         time_list.className = 'timelist';
         var time_format = get_format('TIME_INPUT_FORMATS')[0];
-        quickElement("a", quickElement("li", time_list, ""), gettext("Now"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date().strftime('" + time_format + "'));");
-        quickElement("a", quickElement("li", time_list, ""), gettext("Midnight"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date(1970,1,1,0,0,0,0).strftime('" + time_format + "'));");
-        quickElement("a", quickElement("li", time_list, ""), gettext("6 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date(1970,1,1,6,0,0,0).strftime('" + time_format + "'));");
-        quickElement("a", quickElement("li", time_list, ""), gettext("Noon"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date(1970,1,1,12,0,0,0).strftime('" + time_format + "'));");
+//        quickElement("a", quickElement("li", time_list, ""), gettext("Now"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date().strftime('" + time_format + "'));");
+//        quickElement("a", quickElement("li", time_list, ""), gettext("Midnight"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date(1970,1,1,0,0,0,0).strftime('" + time_format + "'));");
+//        quickElement("a", quickElement("li", time_list, ""), gettext("6 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date(1970,1,1,6,0,0,0).strftime('" + time_format + "'));");
+//        quickElement("a", quickElement("li", time_list, ""), gettext("Noon"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", new Date(1970,1,1,12,0,0,0).strftime('" + time_format + "'));");
+
+        quickElement("a", quickElement("li", time_list, ""), gettext("6 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '06:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("6:30 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '06:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("7 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '07:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("7:30 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '07:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("8 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '08:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("8:30 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '08:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("9 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '09:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("9:30 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '09:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("10 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '10:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("10:30 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '10:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("11 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '11:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("11:30 a.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '11:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("Noon"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '12:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("12:30 p.m"), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '12:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("1 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '13:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("1:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '13:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("2 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '14:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("2:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '14:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("3 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '15:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("3:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '15:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("4 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '16:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("4:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '16:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("5 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '17:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("5:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '17:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("6 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '18:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("6:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '18:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("7 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '19:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("7:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '19:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("8 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '20:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("8:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '20:30:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("9 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '21:00:00');")
+        quickElement("a", quickElement("li", time_list, ""), gettext("9:30 p.m."), "href", "javascript:DateTimeShortcuts.handleClockQuicklink(" + num + ", '21:30:00');")
+
 
         var cancel_p = quickElement('p', clock_box, '');
         cancel_p.className = 'calendar-cancel';
