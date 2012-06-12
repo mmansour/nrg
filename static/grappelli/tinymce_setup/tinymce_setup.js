@@ -43,6 +43,8 @@ tinyMCE.init({
     object_resizing: false,
     cleanup_on_startup: true,
     //forced_root_block: "p",
+    forced_root_block:false,
+    force_p_newlines : false,
     remove_trailing_nbsp: true,
     
     // callbackss

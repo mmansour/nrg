@@ -38,7 +38,8 @@ if (typeof tinyMCE != 'undefined') {
         accessibility_warnings : false,
         object_resizing: false,
         //cleanup: false, // SETTING THIS TO FALSE WILL BREAK EMBEDDING YOUTUBE VIDEOS
-        forced_root_block: "p",
+        forced_root_block:false,
+        force_p_newlines : false,
         remove_trailing_nbsp: true,
 
         // callbackss

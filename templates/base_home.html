@@ -17,11 +17,14 @@
 		<!-- Header -->
 		<div id="header">
 			<div class="text">
-				<h6>Northrop Grumman </h6>
-				<p>Employee Credit Union Services<br />PROVIDED BY:</p>
+                {% block header_top_left %}
+                {{ home.header_top_left|safe }}
+                {% endblock %}
+				{% comment %}<h6>Northrop Grumman </h6>
+				<p>Employee Credit Union Services<br />PROVIDED BY:</p>{% endcomment %}
 			</div>
-			<h1 id="logo"><a href="#">Western Federal Credit Union</a></h1>
-			<a href="#" class="top-link" > Go to <span>western.org &raquo;</span></a>
+			<h1 id="logo"><a href="https://www.western.org/index.aspx" target="_blank">Western Federal Credit Union</a></h1>
+			<a href="https://www.western.org/index.aspx" target="_blank" class="top-link" >Go to <span>western.org &raquo;</span></a>
 			<div class="cl">&nbsp;</div>
 		</div>
 		<!-- END Header -->
@@ -37,14 +40,20 @@
 			</div>
 			<div class="text-container">
 				<div class="text-left">
-					<div class="inner">
+                    {% block header_middle_left %}
+                    {{ home.header_middle_left|safe }}
+                    {% endblock %}
+					{% comment %}<div class="inner">
 						<h3>Special Offer</h3>
 						<p>If you’re shopping for a new car this year, make sure it comes fully loaded—including a Western  Auto Loan with a <strong>.25% discount!</strong></p>
 					</div>
-					<a href="#" class="button" >Apply &raquo;</a>
+					<a href="#" class="button">Apply &raquo;</a>{% endcomment %}
 				</div>
 				<div class="text-right">
-					<div class="inner">
+                    {% block header_middle_right %}
+                    {{ home.header_middle_right|safe }}
+                    {% endblock %}
+					{% comment %}<div class="inner">
 						<h3>eChecking</h3>
 						<p>The perfect checking solution for Online Banking and ATM users!</p>
 						<ul>
@@ -52,8 +61,7 @@
 							<li>Earns monthly dividends</li>
 						</ul>
 					</div>
-
-					<a href="#" class="button" >Learn More &raquo;</a>
+					<a href="#" class="button">Learn More &raquo;</a>{% endcomment %}
 				</div>
 				<div class="cl">&nbsp;</div>
 				<div class="corners">
@@ -68,13 +76,16 @@
 		<!-- END Content Area -->
 
 		<div class="welcome">
-			<div class="left-text">
+            {% block header_top_right %}
+            {{ home.header_top_right|safe }}
+            {% endblock %}
+			{% comment %}<div class="left-text">
 				<h3>Welcome</h3>
 				<h4>Northrop Grumman<br />Employees</h4>
 			</div>
 			<div class="right-text">
 				<p><strong>Thank you for visiting.</strong> We’re proud to serve <strong>Northrop Grumman employees and their families,</strong> and we look forward to showing you just how great your financial experience can really be. From competitive rates to FREE Checking and much more, there’s no end to the value of Western membership.</p>
-			</div>
+			</div>{% endcomment %}
 			<div class="cl">&nbsp;</div>
 			<span class="corner" >&nbsp;</span>
 		</div>
