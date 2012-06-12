@@ -17,9 +17,7 @@
 		<!-- Header -->
 		<div id="header">
 			<div class="text">
-                {% block header_top_left %}
-                {{ home.header_top_left|safe }}
-                {% endblock %}
+                {% block header_top_left %}{% endblock %}
 				{% comment %}<h6>Northrop Grumman </h6>
 				<p>Employee Credit Union Services<br />PROVIDED BY:</p>{% endcomment %}
 			</div>
@@ -40,9 +38,7 @@
 			</div>
 			<div class="text-container">
 				<div class="text-left">
-                    {% block header_middle_left %}
-                    {{ home.header_middle_left|safe }}
-                    {% endblock %}
+                    {% block header_middle_left %}{% endblock %}
 					{% comment %}<div class="inner">
 						<h3>Special Offer</h3>
 						<p>If you’re shopping for a new car this year, make sure it comes fully loaded—including a Western  Auto Loan with a <strong>.25% discount!</strong></p>
@@ -50,9 +46,7 @@
 					<a href="#" class="button">Apply &raquo;</a>{% endcomment %}
 				</div>
 				<div class="text-right">
-                    {% block header_middle_right %}
-                    {{ home.header_middle_right|safe }}
-                    {% endblock %}
+                    {% block header_middle_right %}{% endblock %}
 					{% comment %}<div class="inner">
 						<h3>eChecking</h3>
 						<p>The perfect checking solution for Online Banking and ATM users!</p>
@@ -76,9 +70,7 @@
 		<!-- END Content Area -->
 
 		<div class="welcome">
-            {% block header_top_right %}
-            {{ home.header_top_right|safe }}
-            {% endblock %}
+            {% block header_top_right %}{% endblock %}
 			{% comment %}<div class="left-text">
 				<h3>Welcome</h3>
 				<h4>Northrop Grumman<br />Employees</h4>
@@ -104,7 +96,8 @@
 							<span class="bl" >&nbsp;</span>
 							<span class="br" >&nbsp;</span>
 						</div>
-						<h4>Rates <a href="#" class="img" ><img src="{{ STATIC_URL }}img/25off.png" alt="" /></a></h4>
+                        {% block rate_image %}{% endblock %}
+{#						<h4>Rates <a href="#" class="img" ><img src="{{ STATIC_URL }}img/25off.png" alt="" /></a></h4>#}
 						<div class="inner">
 							<p>As a <strong>Northrop Grumman employee</strong>, you automatically get .25% off our already low <a href="#">Auto Loan rates. Call</a> or visit your nearest <a href="#">Branch location</a> for more information.</p>
 							<a href="#" class="btn" ><span>Apply &raquo;</span></a>

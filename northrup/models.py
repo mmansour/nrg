@@ -11,7 +11,7 @@ class Micropage(Displayable):
     header_top_right = RichTextField(blank=True, verbose_name="Header Top Right")
     header_middle_left = RichTextField(blank=True, verbose_name="Header Bottom Left")
     header_middle_right = RichTextField(blank=True, verbose_name="Header Bottom Right")
-    body_left_column_rate_image = models.ImageField(upload_to="uploads", blank=True, default='25off.png')
+    body_left_column_rate_image = models.ImageField(upload_to="uploads", blank=True, default='uploads/25off.png')
     body_left_column_top = RichTextField(blank=True, verbose_name="Body Column Left Top")
     body_left_column_bottom = RichTextField(blank=True, verbose_name="Body Column Left Bottom")
     body_middle_column_top = RichTextField(blank=True, verbose_name="Body Column Middle Top")

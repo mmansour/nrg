@@ -36,6 +36,11 @@
 {{ home.body_middle_column_top|safe }}
 {% endblock %}
 
+{% block rate_image %}
+{#    <img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="" />#}
+    <h4>Rates <a href="http://www.western.org/about/rates_loan.aspx" target="_blank" class="img" ><img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="" /></a></h4>
+{% endblock %}
+
 {% block main %}
 <table>
 <tr><th>Date</th><th>Event</th><th>Location</th><th>Time</th></tr>
