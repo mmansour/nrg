@@ -99,8 +99,9 @@
                         {% block rate_image %}{% endblock %}
 {#						<h4>Rates <a href="#" class="img" ><img src="{{ STATIC_URL }}img/25off.png" alt="" /></a></h4>#}
 						<div class="inner">
-							<p>As a <strong>Northrop Grumman employee</strong>, you automatically get .25% off our already low <a href="#">Auto Loan rates. Call</a> or visit your nearest <a href="#">Branch location</a> for more information.</p>
-							<a href="#" class="btn" ><span>Apply &raquo;</span></a>
+                            {% block body_left_col_top %}{% endblock %}
+							{% comment %}<p>As a <strong>Northrop Grumman employee</strong>, you automatically get .25% off our already low <a href="#">Auto Loan rates. Call</a> or visit your nearest <a href="#">Branch location</a> for more information.</p>
+							<a href="#" class="btn" ><span>Apply &raquo;</span></a>{% endcomment %}
 						</div>
 					</div>
 				</div>
@@ -116,13 +117,14 @@
 							<span class="bl" >&nbsp;</span>
 							<span class="br" >&nbsp;</span>
 						</div>
-						<h4>Open an Account</h4>
+                        {% block body_left_col_bottom %}{% endblock %}
+						{% comment %}<h4>Open an Account</h4>
 
 						<h3>Ready to get started?</h3>
 						<div class="inner">
 							<p>Fill out our <a href="#">online membership application</a> and enjoy the benefits of Western membership. Don’t forget, your family is eligible too.</p>
 							<a href="#" class="btn" ><span>Open an Account Today &raquo;</span></a>
-						</div>
+						</div>{% endcomment %}
 					</div>
 				</div>
 				<!-- END Box -->
@@ -142,32 +144,32 @@
 							<span class="bl" >&nbsp;</span>
 							<span class="br" >&nbsp;</span>
 						</div>
-						<h4>Western Loans. Apply Today!</h4>
-
-						<div class="table-holder">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-								<tr>
-									<td class="title" width="270" >Auto Loans</td>
-									<td><a href="#" class="apply" >Apply</a></td>
-									<td><a href="#"><strong>Rates</strong></a></td>
-								</tr>
-								<tr class="color" >
-									<td class="title" width="270" >Mortgage Loans</td>
-									<td><a href="#" class="apply" >Apply</a></td>
-									<td><a href="#"><strong>Rates</strong></a></td>
-								</tr>
-								<tr>
-									<td class="title" width="270" >Visa Credit Cards</td>
-									<td><a href="#" class="apply" >Apply</a></td>
-									<td><a href="#"><strong>Rates</strong></a></td>
-								</tr>
-								<tr class="color" >
-									<td class="title" width="270" >All Other Loans</td>
-									<td><a href="#" class="apply" >Apply</a></td>
-									<td><a href="#"><strong>Rates</strong></a></td>
-								</tr>
-							</table>
-						</div>
+                        {% block main_top %}{% endblock %}
+{% comment %}<h4>Western Loans. Apply Today!</h4>
+<div class="table-holder">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="title" width="270" >Auto Loans</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+<tr class="color" >
+<td class="title" width="270" >Mortgage Loans</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+<tr>
+<td class="title" width="270" >Visa Credit Cards</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+<tr class="color" >
+<td class="title" width="270" >All Other Loans</td>
+<td><a href="#" class="apply" >Apply</a></td>
+<td><a href="#"><strong>Rates</strong></a></td>
+</tr>
+</table>
+</div>{% endcomment %}
 					</div>
 				</div>
 				<!-- END Box -->

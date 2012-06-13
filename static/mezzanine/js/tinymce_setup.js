@@ -99,14 +99,15 @@ if (typeof tinyMCE != 'undefined') {
 		+ "-iframe,"
 		+ "-table[border=0|cellspacing|cellpadding|width|frame|rules|height|"
 		+ "align|summary|bgcolor|background|bordercolor],"
-		+ "-tr[rowspan|width|height|align|valign|bgcolor|"
+		+ "-tr[rowspan|width|height|align|valign|bgcolor|class|"
 		+ "background|bordercolor],"
 		+ "tbody,"
 		+ "thead,"
 		+ "tfoot,"
-		+ "#td[colspan|rowspan|width|height|align|valign|bgcolor|background|"
+		+ "#td[colspan|rowspan|width|height|align|valign|bgcolor|background|class|"
 		+ "bordercolor|scope],"
 		+ "#th[colspan|rowspan|width|height|align|valign|scope],"
+        + "-td[class],"
 		+ "-div,"
 		+ "",
         extended_valid_elements: "pre[style],"
@@ -127,10 +128,10 @@ if (typeof tinyMCE != 'undefined') {
         +"param[id|name|type|value|valuetype<DATA?OBJECT?REF],",
         valid_children : ""
         + "h1/h2/h3/h4/h5/h6/a[%itrans_na],"
-        + "table[thead|tbody|tfoot|tr|td],"
+        + "table[thead|tbody|tfoot|tr|td|class],"
         + "strong/b/p/div/em/i/td[%itrans|#text],"
 		//+ "body[%btrans|#text]"
-        + "",
+        + ""
 	});
 
 }
