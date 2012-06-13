@@ -185,22 +185,24 @@
 							<span class="bl" >&nbsp;</span>
 							<span class="br" >&nbsp;</span>
 						</div>
-						<h4>Get Connected to Western</h4>
+                        {% block main_bottom %}{% endblock %}
+						{% comment %}<h4>Get Connected to Western</h4>
 						<div class="inner">
 							<p>Western offers a range of events and programs to meet the needs of <strong>Northrop Grumman employees</strong>. We offer <a href="#">Loan Sessions, Benefits Fairs, Lunch and Learns</a> and other opportunities to assist you. Check out our calendar. <strong>We’d love to see you soon!</strong></p>
-						</div>
+						</div>{% endcomment %}
 							
 						<div class="events">
 							<h3>Calendar of Events &amp; Programs</h3>
 							<a href="#" class="more" >See more &raquo;</a>
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tr>
-									<th><a href="#">Date</a></th>
-									<th width="140" ><a href="#">Event</a></th>
-									<th><a href="#">Location</a></th>
-									<th><a href="#">Time</a></th>
+									<th>Date</th>
+									<th width="140" >Event</th>
+									<th>Location</th>
+									<th>Time</th>
 								</tr>
-								<tr class="color" >
+                                {% block main %}{% endblock %}
+								{% comment %}<tr class="color" >
 									<td>
 										<p class="month" >DEC</p>
 										<p class="day" >20</p>
@@ -217,14 +219,15 @@
 									<td class="title" ><a href="#"><strong>Lunch &amp; Learn</strong></a></td>
 									<td>Ontario, CA</td>
 									<td>10 am - 1 pm</td>
-								</tr>
+								</tr>{% endcomment %}
 							</table>
 						</div>
 
 						<div class="inner">
-							<h3>Let us Know</h3>
+                            {% block event_details %}{% endblock %}
+							{% comment %}<h3>Let us Know</h3>
 							<p>Questions, comments or to schedule an event, email Alex Wouters at <a href="#">alex.wouters@western.org</a>. For your protection, please do not email account or personal information.</p>
-						</div>
+						{% endcomment %}</div>
 					</div>
 				</div>
 				<!-- END Box -->

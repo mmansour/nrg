@@ -124,7 +124,7 @@ h1#logo a { display: block; width: 340px; height: 55px;  background: url(/static
 .events table { font-size: 12px; line-height: 40px; }
 .events table td,
 .events table th { padding: 0 12px; text-align: left; border-right: 1px solid #e1e2e3; }
-.events table th { font-weight: normal; border-top: 1px solid #e1e2e3; }
+.events table th { font-weight: normal; border-top: 1px solid #e1e2e3; color:#4E89BE;}
 .events table th a { text-decoration: underline; }
 .events table th a:hover { text-decoration: none; }
 .events table .title { font-size: 13px; }
