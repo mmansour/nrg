@@ -142,7 +142,7 @@ tinyMCE.init({
         +"param[id|name|type|value|valuetype<DATA?OBJECT?REF],",
         valid_children : ""
         + "h1/h2/h3/h4/h5/h6/a[%itrans_na],"
-        + "table[thead|tbody|tfoot|tr|td|class],"
+        + "table[thead|tbody|tfoot|tr|td|class|width],"
         + "strong/b/p/div/em/i/td[%itrans|#text],"
 		//+ "body[%btrans|#text]"
         + ""

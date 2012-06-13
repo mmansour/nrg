@@ -111,6 +111,7 @@ h1#logo a { display: block; width: 340px; height: 55px;  background: url(/static
 #content { float: left; display: inline; width: 448px; }
 
 .table-holder  { padding: 0 0 15px; height: 100%; }
+.table-holder  table{ width: 100%; }
 .table-holder td { padding: 7px 10px; line-height: 26px; }
 .table-holder td.title { font-size: 18px; padding-left: 18px; }
 .table-holder .apply { width: 65px; height: 27px; background: url(/static/img/apply-button.jpg) no-repeat 0 0; display: block; font-size: 14px; font-weight: bold; color: #5b5b5b; text-align: center; }
