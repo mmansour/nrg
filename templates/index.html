@@ -50,7 +50,7 @@
     </td>
     <td class="title" ><a href="{% url northrup.views.event_details %}"><strong>{{ e.event }}</strong></a></td>
     <td>{{ e.location }}</td>
-    <td>{{ e.start_time|time:"ga" }} - {{ e.end_time|time:"ga" }}</td>
+    <td class="noborder">{{ e.start_time|time:"gA" }} - {{ e.end_time|time:"gA" }}</td>
 </tr>
 {% endfor %}
 {% comment %}

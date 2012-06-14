@@ -121,16 +121,19 @@ h1#logo a { display: block; width: 340px; height: 55px;  background: url(/static
 .events { margin: 0 10px; height: 100%; background: #f5f5f6; position: relative; }
 .events h3 { padding: 0 15px; background: transparent ; margin: 0; line-height: 45px; }
 .events .more { font-size: 12px; position: absolute; top: 17px; right: 17px; display:none; }
-.events table { font-size: 12px; line-height: 40px; }
+.events table { font-size: 12px;}
 .events table td,
-.events table th { padding: 0 12px; text-align: left; border-right: 1px solid #e1e2e3; }
-.events table th { font-weight: normal; border-top: 1px solid #e1e2e3; color:#4E89BE;}
+.events table th { padding: 3px 12px; text-align: left; border-right: 1px solid #e1e2e3; }
+.events table th { font-weight: normal; border-top: 1px solid #e1e2e3; color:#4E89BE; line-height: 40px;}
 .events table th a { text-decoration: underline; }
 .events table th a:hover { text-decoration: none; }
 .events table .title { font-size: 13px; }
 .events table .month { text-align: center; font-size: 12px; line-height: 12px; position: relative; margin: 6px 0 -3px;  }
 .events table .day { text-align: center; font-weight: bold; font-size: 22px; line-height: 22px; }
 .events table .color td { background: #eaeef2; }
+.events table  th.noborder { border-right:none; }
+.events table  td.noborder { border-right:none; }
+
 
 .socials { position: absolute; bottom: 9px; left: 18px; }
 .socials ul { list-style: none outside none; margin: 0; float: left; display: inline;  }
