@@ -18,6 +18,8 @@ class Micropage(Displayable):
     body_middle_column_bottom = RichTextField(blank=True, verbose_name="Body Column Middle Bottom")
     body_right_column = RichTextField(blank=True, verbose_name="Body Column Right Bottom")
     event_details = RichTextField(blank=True, verbose_name="Event Details")
+    event_details_right = RichTextField(blank=True, verbose_name="Event Details Page Right Column")
+    event_details_left = RichTextField(blank=True, verbose_name="Event Details Page Left Column")
     footer = RichTextField(blank=True, verbose_name="Footer")
 
 

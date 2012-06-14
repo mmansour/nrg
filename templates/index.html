@@ -38,17 +38,17 @@
 
 {% block rate_image %}
 {#    <img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="" />#}
-    <h4>Rates <a href="http://www.western.org/about/rates_loan.aspx" target="_blank" class="img" ><img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="" /></a></h4>
+    <h4>Rates <a href="http://www.western.org/about/rates_loan.aspx" target="_blank" class="img" ><img src="{{ STATIC_URL }}media/{{ home.body_left_column_rate_image }}" alt="Current Rates" /></a></h4>
 {% endblock %}
 
 {% block main %}
 {% for e in events %}
 <tr {% cycle 'class="color"' '' %}>
     <td>
-        <p class="month" >{{ e.event_date|date:"M"|upper }}</p>
-        <p class="day" >{{ e.event_date|date:"d" }}</p>
+        <p class="month">{{ e.event_date|date:"M"|upper }}</p>
+        <p class="day">{{ e.event_date|date:"d" }}</p>
     </td>
-    <td class="title" ><a href="{% url northrup.views.event_details %}"><strong>{{ e.event }}</strong></a></td>
+    <td class="title"><a href="{% url northrup.views.event_details %}"><strong>{{ e.event }}</strong></a></td>
     <td>{{ e.location }}</td>
     <td class="noborder">{{ e.start_time|time:"gA" }} - {{ e.end_time|time:"gA" }}</td>
 </tr>
